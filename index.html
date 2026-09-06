@@ -16,12 +16,15 @@
       <span>Lumière</span>
       <small>Beauty Salon</small>
     </a>
-    <nav aria-label="メインメニュー">
+    <nav id="mainNavigation" aria-label="メインメニュー">
       <a href="#concept">コンセプト</a>
       <a href="#menu">メニュー</a>
       <a href="#price">料金</a>
       <a href="#access">アクセス</a>
     </nav>
+    <button class="mobile-nav-toggle" type="button" aria-label="メニューを開く" aria-controls="mainNavigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main id="top">
@@ -42,6 +45,25 @@
           <a class="menu-hotspot hotspot-price" href="#price" aria-label="料金プランを見る"></a>
           <a class="menu-hotspot hotspot-menu" href="#menu" aria-label="施術メニューを見る"></a>
           <a class="menu-hotspot hotspot-access" href="#access" aria-label="アクセスを見る"></a>
+        </div>
+        <div class="mobile-rich-menu" aria-label="スマートフォン用メニュー">
+          <button class="mobile-menu-card mobile-reserve js-reservation-link" type="button" aria-label="ご予約フォームを開く">
+            <img src="https://static.wixstatic.com/media/056e8e_44c5a19dac074b71959f00cc126ef9ee~mv2.png" alt="ご予約 24時間受付中">
+          </button>
+          <div class="mobile-menu-grid">
+            <a class="mobile-menu-card mobile-price" href="#price" aria-label="料金プランを見る">
+              <img src="https://static.wixstatic.com/media/056e8e_44c5a19dac074b71959f00cc126ef9ee~mv2.png" alt="料金 料金プラン">
+            </a>
+            <a class="mobile-menu-card mobile-menu" href="#menu" aria-label="施術メニューを見る">
+              <img src="https://static.wixstatic.com/media/056e8e_44c5a19dac074b71959f00cc126ef9ee~mv2.png" alt="メニュー 施術メニュー">
+            </a>
+            <a class="mobile-menu-card mobile-instagram" href="https://www.instagram.com/sora_with_jiru/" target="_blank" rel="noopener noreferrer" aria-label="Instagramを新しいタブで開く">
+              <img src="https://static.wixstatic.com/media/056e8e_44c5a19dac074b71959f00cc126ef9ee~mv2.png" alt="Instagram 最新情報はこちら">
+            </a>
+            <a class="mobile-menu-card mobile-access" href="#access" aria-label="アクセスを見る">
+              <img src="https://static.wixstatic.com/media/056e8e_44c5a19dac074b71959f00cc126ef9ee~mv2.png" alt="アクセス 店舗情報">
+            </a>
+          </div>
         </div>
         <figcaption>画像の各ボタンを押してお試しください</figcaption>
       </figure>

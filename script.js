@@ -6,6 +6,9 @@ const form = document.querySelector('#reservationForm');
 const formView = document.querySelector('#formView');
 const successView = document.querySelector('#successView');
 const dateInput = document.querySelector('input[name="date"]');
+const header = document.querySelector('.header');
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+const mobileNavLinks = document.querySelectorAll('#mainNavigation a');
 
 dateInput.min = new Date().toLocaleDateString('sv-SE');
 
@@ -19,6 +22,20 @@ openButtons.forEach((button) => {
   button.addEventListener('click', () => {
     resetReservation();
     dialog.showModal();
+  });
+});
+
+mobileNavToggle.addEventListener('click', () => {
+  const isOpen = header.classList.toggle('nav-open');
+  mobileNavToggle.setAttribute('aria-expanded', String(isOpen));
+  mobileNavToggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+});
+
+mobileNavLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    header.classList.remove('nav-open');
+    mobileNavToggle.setAttribute('aria-expanded', 'false');
+    mobileNavToggle.setAttribute('aria-label', 'メニューを開く');
   });
 });
 
