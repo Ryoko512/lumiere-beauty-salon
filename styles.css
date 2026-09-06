@@ -167,14 +167,20 @@ footer p { margin: 0; color: #8d8079; font-size: .75rem; }
   .concept .section-heading h2 { font-size: clamp(1.55rem, 7.4vw, 2rem); }
   .rich-menu figcaption { margin-top: 16px; text-align: center; }
   .section { padding: 82px 24px; }
+  .center-heading h2 { font-size: clamp(1.7rem, 7.4vw, 2rem); }
+  .center-heading > p:last-child { font-size: clamp(.88rem, 3.9vw, 1rem); }
+  .mobile-copy-line { display: block; white-space: nowrap; }
   .menu-grid { grid-template-columns: 1fr; }
   .menu-card.featured { transform: none; }
   .menu-card { min-height: 300px; }
   .price-row { grid-template-columns: 1fr; gap: 8px; padding: 26px 18px; }
   .price-row strong { margin-top: 8px; }
   .price-footnote { flex-direction: column; gap: 6px; }
-  footer { align-items: start; gap: 28px; }
-  .footer-links { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .reserve h2 { font-size: clamp(1.45rem, 7vw, 1.8rem); }
+  .mobile-keep-line { white-space: nowrap; }
+  footer { align-items: start; flex-direction: column; gap: 28px; }
+  .footer-links { width: 100%; align-items: flex-start; flex-direction: column; gap: 10px; }
+  .footer-links a { white-space: nowrap; font-size: .78rem; }
   .form-grid { grid-template-columns: 1fr; }
   .full-field { grid-column: auto; }
   .dialog-panel { padding-top: 52px; }
